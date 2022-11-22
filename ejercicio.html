@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        //let nombre = "santiago B";
+
+        // alert("hola me llamo "+ nombre);
+
+        // nombre = prompt("Ingrese su nombre");
+
+        // alert("hola me llamo "+ nombre);
+
+        // let nombre = "jhon"
+        // let FechaN = parseInt(prompt("Fecha de Nacimiento"));
+        // let edad = 2022 + FechaN;
+
+
+        // alert("buen dia "+nombre +" su edad es "+edad);
+
+        /* let fNacimiento = parseInt(prompt("ingrese su fecha de nacimiento"));
+         let edad = 2022-fNacimiento;
+         let altura = parseFloat(prompt("Ingrese su altura"));
+         let nombre = prompt("ingrese su nombre");
+ 
+         alert(String(fNacimiento)+edad+altura+nombre);*/
+
+        /* let producto = prompt("ingrese el nombre de su producto");
+         let precio = parseInt(prompt("Ingrese el precio del producto"));
+ 
+         if (precio > 1000) {
+            let  porcentaje = precio * 0.2;
+            precio = precio - porcentaje;
+             alert("El producto "+ producto + " tiene un descuento de "+porcentaje+"\nTotal: "+precio);
+         }else{
+             alert("El producto "+ producto + " no tiene de Descuento \nTotal: "+precio);
+         }*/
+
+        /* let dato1 = parseInt(prompt("Ingrese un dato")); 50
+         let dato2 = parseInt(prompt("ingrese el segundo dato")); 1
+         let dato3 = parseInt(prompt("ingrese el tercer dato"));
+         let mayor;
+ 
+         if (dato1 > dato2 &&  dato1 > dato3) {
+            alert(" el numero mayor es "+ dato1);}
+         else if (dato2 > dato1 && dato2 > dato3) {
+             alert(" el numero mayor es "+dato2);
+         }else if (dato3 > dato1 && dato3 > dato2) {
+             alert(" el numero mayor es "+ dato3);
+         }*/
+
+        /*   let letrasGrupo1 = ["a","b","c","d","e","f","g","h"];
+   
+   
+          let nombre  = prompt("ingrese su nombre");
+          let genero = prompt("ingrese su genero M 0 F");
+          let fechaNacimiento = prompt("ingrese su fecha de nacimiento");
+   
+          let grupo1 = [];
+          let grupo2 = [];
+          let grupo3 = [];
+   
+          for (let index = 0; index < letrasGrupo1.length; index++) {
+           if (nombre.charAt(0) == letrasGrupo[index]) {
+               if (genero == M) {
+                   if (nombre.length > 6) {
+                       grupo1.push(nombre);
+                   }
+               }
+           }
+          }
+   
+         for (let index = 0; index < grupo1.length; index++) {
+           console(grupo1[index]);
+          }*/
+        /*
+               let valor = paseInt(prompt("Seleccione 1,2,3,4 o 5"));
+        
+               switch (valor) {
+                case 1:
+                    alert(23+3);
+                    break;
+                case 2:
+                    alert(23-3);
+                    break;
+        
+                case 3:
+                    alert(23*3);
+                    break;
+                
+                case 4:
+                    alert(23/3);
+                    break;
+        
+                case 5:
+                    alert(Math.sqrt(8));
+                    break;
+                default:
+                    break;
+               }
+        
+             
+        */
+
+        /*let x = 0;
+        
+        
+               do {
+                alert(x);
+                x++;
+        
+               } while (x != 10 && x!= 0);*/
+
+        //diferencia entre dos nuemros ejemplo 10 y 20 la diferencia es 10 y muestra los numeros de 1 a 10
+        //si la diferencia es mayor a 20 debe mostrar la diferencia y ya 
+
+        /*let num1 = parseInt(prompt("Ingrese el primer numero"));
+        let num2 = parseInt(prompt("ingrese el segundo numero"));
+        let diferencia = num1-num2;
+ 
+        if (diferencia < 20) {
+             let contador = 1
+            do {
+              document.write(contador+" / ");
+              contador++;
+            } while (contador != (diferencia+1));
+ 
+        }else{
+         alert("la diferencia :"+diferencia);
+        }
+ 
+        */
+
+        //leer X cantidad de numeros y sumar solo los dos mayores
+        let codicional;
+        let numeroMayor1 = 50;
+        let numeroMayor2 = 0;
+
+        do {
+
+            let numero = parseInt(prompt("Ingrese un numero")); 
+
+            if (numero > numeroMayor1) {
+                numeroMayor2 = numeroMayor1 ;
+                numeroMayor1 = numero ;
+            }else if (numero < numeroMayor1 && numero > numeroMayor2) {
+                numeroMayor2 = numero;
+            }
+
+            let continuar = parseInt(prompt("Desea agregar mas: \n1. Agregar mas \n2. para salir"))
+
+            if (continuar == 1) {
+                codicional = true;
+
+            } else if (continuar == 2) {
+                codicional = false;
+                alert("el numero mayor 1 es: " + numeroMayor1 + "\n el numero mayor 2 es : " + numeroMayor2 + "\n Total = " + (numeroMayor1 + numeroMayor2));
+            }
+
+        } while (codicional != false);
+
+
+    </Script>
+</body>
+
+</html>
